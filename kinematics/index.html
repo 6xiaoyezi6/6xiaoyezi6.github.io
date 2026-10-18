@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- 功能：个人学术网站页面，提供内容导航和对应科研/工具入口。
+方法：语义化静态 HTML，公共 CSS/JS；运动学页面加载带内置核质量的兼容脚本，浏览器独立计算。
+注意事项：个人资料待补充；相对链接适用于 GitHub Pages；工具页支持 file:// 与 HTTP 访问。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#192e3d">
+<meta name="description" content="6xiaoyezi6 的个人学术网站：核物理研究、论文与相对论两体/三体运动学和激发能灵敏度计算工具。">
+<title>核运动学工具 · 6xiaoyezi6</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23192e3d'/%3E%3Ctext x='24' y='34' text-anchor='middle' font-size='36' fill='white'%3E∿%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/main.js" defer>
+</script>
+</head>
+<body class="">
+<a class="skip-link" href="#main">跳转到正文</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="../index.html">
+<span class="brand-symbol" aria-hidden="true">∿</span>
+<span>6xiaoyezi6<small>NUCLEAR PHYSICS</small>
+</span>
+</a>
+<button class="nav-toggle" type="button" aria-label="切换导航" aria-controls="site-nav" aria-expanded="false">菜单 ☰</button>
+<nav class="site-nav" id="site-nav" aria-label="主要导航">
+<a href="../index.html">首页</a>
+<a href="../research.html">科研方向</a>
+<a href="../publications.html">发表论文</a>
+<a href="../contact.html">联系</a>
+<a href="../kinematics/index.html" aria-current="page">运动学工具 ↗</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<header class="page-heading">
+<div class="breadcrumbs">
+<a href="../index.html">首页</a>
+<span>/</span>
+<span>运动学工具</span>
+</div>
+<span class="eyebrow">NUCLEAR KINEMATICS / TOOLKIT</span>
+<h1>核运动学计算工具</h1>
+<p class="lead">配置反应道、查看运动学关联，再分析激发能对测量量的偏导数与误差传播。全部计算在浏览器中完成。</p>
+</header>
+<div class="tool-cards">
+<a class="tool-card" href="../kinematics/two-body/index.html">
+<div class="tool-card-top">
+<span class="tool-icon">2 → 2</span>
+<span class="card-number">TOOL / 01</span>
+</div>
+<h3>相对论两体运动学</h3>
+<p>Two-body kinematics · Scattering</p>
+<div class="reaction">A + t → c + d*</div>
+<p>从能量与角度关联出发，重建缺失质量，分析测量量对激发能分辨率的影响。</p>
+<div class="card-footer">
+<span>3 类关联 · 2 个测量量的偏导数</span>
+<span>打开工具 ↗</span>
+</div>
+</a>
+<a class="tool-card" href="../kinematics/three-body/index.html">
+<div class="tool-card-top">
+<span class="tool-icon">2 → 3</span>
+<span class="card-number">TOOL / 02</span>
+</div>
+<h3>相对论三体运动学</h3>
+<p>Three-body kinematics · Knockout</p>
+<div class="reaction">A + t → B* + 1 + 2</div>
+<p>探索三体相空间边界，选择物理解，量化双粒子测量中的能量与角度误差。</p>
+<div class="card-footer">
+<span>7 类关联 · 4 个测量量的偏导数</span>
+<span>打开工具 ↗</span>
+</div>
+</a>
+</div>
+<section class="editorial-grid" style="margin-top:45px">
+<h2>使用流程</h2>
+<div>
+<p>1. 选择两体或三体工具，输入核素、束流动能和余核激发能。</p>
+<p>2. 查看能量与角度关联。运动学图展示整个反应道的分支或相空间边界。</p>
+<p>3. 在图下设置测量量并选择动能物理解，查看偏导数、±1 精确偏差和一阶分辨率。</p>
+<p class="hint">靶核静止，c=1。束流使用 MeV/u，测量和绘图动能使用总 MeV，角度使用 degree。核质量来自原 NuclearMass 接口导出的 NUBASE2020 基态表。</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<span>© <span data-year>2026</span> 6xiaoyezi6 · Nuclear Physics</span>
+<div class="footer-links">
+<span>个人资料待补充</span>
+<a href="../kinematics/index.html">探索运动学 ↗</a>
+<a href="https://github.com/6xiaoyezi6/6xiaoyezi6.github.io" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

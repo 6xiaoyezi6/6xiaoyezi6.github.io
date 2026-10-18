@@ -1,0 +1,4 @@
+/* 功能：三体交互页样式入口；方法：在宽屏排列四个测量量，窄屏采用公共两列布局。
+ * 注意事项：须先加载 assets/css/style.css；角度模式由脚本切换输入约束。
+ */
+@media(min-width:1001px){.three-body .measurement-fields{grid-template-columns:repeat(4,1fr)}}

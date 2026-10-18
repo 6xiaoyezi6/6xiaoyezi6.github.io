@@ -1,0 +1,9 @@
+{
+  "name": "6xiaoyezi6-academic-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build-calculator.py",
+    "test": "python3 scripts/build-calculator.py --check && node --test tests/*.test.js"
+  }
+}

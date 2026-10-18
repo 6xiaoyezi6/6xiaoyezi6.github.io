@@ -1,0 +1,4 @@
+/* 功能：两体交互页样式入口；方法：继承全站工具组件，限定单变量表单宽度。
+ * 注意事项：须先加载 assets/css/style.css；不改变图表的数值和单位。
+ */
+.two-body #measurement-form>.fields{max-width:360px;grid-template-columns:1fr}

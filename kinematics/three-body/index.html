@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 功能：个人学术网站页面，提供内容导航和对应科研/工具入口。
+方法：语义化静态 HTML，公共 CSS/JS；运动学页面加载带内置核质量的兼容脚本，浏览器独立计算。
+注意事项：个人资料待补充；相对链接适用于 GitHub Pages；工具页支持 file:// 与 HTTP 访问。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#192e3d">
+<meta name="description" content="6xiaoyezi6 的个人学术网站：核物理研究、论文与相对论两体/三体运动学和激发能灵敏度计算工具。">
+<title>相对论三体运动学 · 6xiaoyezi6</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23192e3d'/%3E%3Ctext x='24' y='34' text-anchor='middle' font-size='36' fill='white'%3E∿%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<script src="../../assets/js/main.js" defer>
+</script>
+<script src="../../assets/js/calculator.js" defer>
+</script>
+</head>
+<body class="three-body">
+<a class="skip-link" href="#main">跳转到正文</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="../../index.html">
+<span class="brand-symbol" aria-hidden="true">∿</span>
+<span>6xiaoyezi6<small>NUCLEAR PHYSICS</small>
+</span>
+</a>
+<button class="nav-toggle" type="button" aria-label="切换导航" aria-controls="site-nav" aria-expanded="false">菜单 ☰</button>
+<nav class="site-nav" id="site-nav" aria-label="主要导航">
+<a href="../../index.html">首页</a>
+<a href="../../research.html">科研方向</a>
+<a href="../../publications.html">发表论文</a>
+<a href="../../contact.html">联系</a>
+<a href="../../kinematics/index.html" aria-current="page">运动学工具 ↗</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<header class="page-heading">
+<div class="breadcrumbs">
+<a href="../../index.html">首页</a>
+<span>/</span>
+<a href="../index.html">运动学工具</a>
+<span>/</span>
+<span>三体</span>
+</div>
+<div class="page-title-row">
+<div>
+<span class="eyebrow">THREE-BODY KINEMATICS</span>
+<h1>相对论三体运动学</h1>
+<p class="lead">先探索运动学关联，再量化测量误差对激发能重建的影响。</p>
+</div>
+<div class="reaction-equation">A + t → B* + 1 + 2</div>
+</div>
+<nav class="jump-links" aria-label="本页章节">
+<a href="#curves">01 运动学曲线 ↓</a>
+<a href="#sensitivity">02 激发能偏导数 ↓</a>
+</nav>
+</header>
+<noscript>
+<p>此计算工具需要 JavaScript。请启用 JavaScript 后重新加载页面。</p>
+</noscript>
+<div id="calculator" aria-label="三体运动学计算器">
+<p role="status">正在初始化计算器…</p>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<span>© <span data-year>2026</span> 6xiaoyezi6 · Nuclear Physics</span>
+<div class="footer-links">
+<span>个人资料待补充</span>
+<a href="../../kinematics/index.html">探索运动学 ↗</a>
+<a href="https://github.com/6xiaoyezi6/6xiaoyezi6.github.io" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
